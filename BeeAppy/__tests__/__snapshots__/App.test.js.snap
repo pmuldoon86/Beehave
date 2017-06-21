@@ -156,7 +156,7 @@ exports[`#App renders HomeScreen 1`] = `
             "index": 0,
             "routes": Array [
               Object {
-                "key": "Init-id-1498074267047-1",
+                "key": "Init-id-1498077644431-1",
                 "routeName": "Home",
               },
             ],
