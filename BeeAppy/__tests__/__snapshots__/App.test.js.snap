@@ -69,6 +69,58 @@ exports[`#App renders HomeScreen 1`] = `
         }
       >
         <View>
+          <View
+            accessibilityComponentType="button"
+            accessibilityLabel={undefined}
+            accessibilityTraits={
+              Array [
+                "button",
+              ]
+            }
+            accessible={true}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Array [
+                  Object {},
+                ]
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#0C42FD",
+                      "fontSize": 18,
+                      "padding": 8,
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                Link to Donation page
+              </Text>
+            </View>
+          </View>
           <Text
             accessible={true}
             allowFontScaling={true}
@@ -104,7 +156,7 @@ exports[`#App renders HomeScreen 1`] = `
             "index": 0,
             "routes": Array [
               Object {
-                "key": "Init-id-1498074152790-1",
+                "key": "Init-id-1498074267047-1",
                 "routeName": "Home",
               },
             ],
