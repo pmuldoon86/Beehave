@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a home page 1`] = `
+exports[`Home component renders a home page 1`] = `
 <View>
   Hi
 </View>
