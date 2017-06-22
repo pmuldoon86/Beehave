@@ -3,6 +3,7 @@ import App from '../App';
 
 import renderer from 'react-test-renderer';
 
+
 describe('#App', () => {
   it('renders without crashing', () => {
     const rendered = renderer.create(<App />).toJSON();
@@ -14,4 +15,5 @@ describe('#App', () => {
     ).toJSON();
     expect(homescreen).toMatchSnapshot();
   });
+
 });
