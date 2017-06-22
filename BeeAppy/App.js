@@ -1,23 +1,41 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  View,
+  Text,
+  Button,
+} from 'react-native';
+import { StackNavigator } from 'react-navigation';
 
-export default class App extends React.Component {
+class HomeScreen extends React.Component {
+  static navigationOptions = {
+    title: 'BeeAppy',
+  };
   render() {
+    const { navigate } = this.props.navigation;
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+      <View>
+      <Button
+        onPress={() => navigate('Donate')}
+        title='Link to Donation page'
+      />
+        <Text>Home page content</Text>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+class Donate extends React.Component {
+  static navigationOptions = {
+    title: 'Donation page',
+  };
+  render() {
+    return <Text>Donation content</Text>
+  }
+}
+
+const SimpleApp = StackNavigator({
+  Home: { screen: HomeScreen },
+  Donate: { screen: Donate },
 });
+
+export default SimpleApp;
