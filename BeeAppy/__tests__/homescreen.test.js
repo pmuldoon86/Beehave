@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import Home from '../src/Home';
 import BeeButton from '../src/BeeButton';
+
 import renderer from 'react-test-renderer';
 
 describe('Home component', () => {

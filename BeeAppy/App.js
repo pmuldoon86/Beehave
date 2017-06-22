@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  AppRegistry,
   StyleSheet,
   View,
   Text,
@@ -36,7 +37,7 @@ class Donate extends React.Component {
   }
 }
 
-const SimpleApp = StackNavigator({
+const BeeAppy = StackNavigator({
   Home: { screen: HomeScreen },
   Donate: { screen: Donate },
 });
@@ -50,4 +51,4 @@ const styles = StyleSheet.create({
    },
  });
 
-export default SimpleApp;
+AppRegistry.registerComponent('BeeAppy', () => BeeAppy);

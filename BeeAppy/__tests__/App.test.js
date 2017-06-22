@@ -1,3 +1,4 @@
+import 'react-native';
 import React from 'react';
 import App from '../App';
 
@@ -15,5 +16,4 @@ describe('#App', () => {
     ).toJSON();
     expect(homescreen).toMatchSnapshot();
   });
-
 });
