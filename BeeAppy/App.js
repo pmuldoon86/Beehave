@@ -5,8 +5,11 @@ import {
   View,
   Text,
   Button,
+  WebView,
+  Linking,
+  TouchableOpacity
 } from 'react-native';
-import Home from './src/Home';
+import Home from './src/screens/Home';
 import { StackNavigator } from 'react-navigation';
 
 class HomeScreen extends React.Component {
@@ -33,7 +36,11 @@ class Donate extends React.Component {
     title: 'Donation page',
   };
   render() {
-    return <Text>Donation content</Text>
+    return (
+      <TouchableOpacity onPress={() => Linking.openURL('http://bumblebeeconservation.org/')}>
+        <Text>Help the Bees</Text>
+        </TouchableOpacity>
+    )
   }
 }
 
