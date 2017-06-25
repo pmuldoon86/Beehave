@@ -10,17 +10,26 @@ export default class GeoMap extends React.Component {
   static navigationOptions = {
     title: 'Map',
   };
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      initialPosition: {
+        latitude: 0,
+        longitude: 0,
+        latitudeDelta: 0,
+        longitudeDelta: 0
+      }
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <MapView
           style={styles.map}
-          initialRegion={{
-            latitude: 37.78825,
-            longitude: -122.4324,
-            latitudeDelta: 8.8922,
-            longitudeDelta: 8.8421,
-          }}>
+          initialRegion={this.state.initialPosition}>
         </MapView>
       </View>
     );
