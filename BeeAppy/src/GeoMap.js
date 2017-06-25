@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
   View,
+  Text
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import MapView from 'react-native-maps';
@@ -15,13 +16,24 @@ export default class GeoMap extends React.Component {
     super(props)
 
     this.state = {
-      initialPosition: {
-        latitude: 0,
-        longitude: 0,
-        latitudeDelta: 0,
-        longitudeDelta: 0
-      }
+      latitude: 0,
+      longitude: 0,
+      error: null,
     }
+  }
+
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        this.setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          error: null,
+        });
+      },
+      (error) => this.setState({ error: error.message }),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
+    );
   }
 
   render() {
@@ -29,8 +41,12 @@ export default class GeoMap extends React.Component {
       <View style={styles.container}>
         <MapView
           style={styles.map}
-          initialRegion={this.state.initialPosition}>
-        </MapView>
+          initialRegion={{ latitude: this.state.latitude, longitude: this.state.longitude,
+                           latitudeDelta: 0, longitudeDelta: 0}}
+        />
+          <Text>Latitude: {this.state.latitude}</Text>
+          <Text>Longitude: {this.state.longitude}</Text>
+        {this.state.error ? <Text>Error: {this.state.error}</Text> : null}
       </View>
     );
   }
