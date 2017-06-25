@@ -7,6 +7,7 @@ import {
   Button,
 } from 'react-native';
 import Home from './src/Home';
+import GeoMap from './src/GeoMap'
 import { StackNavigator } from 'react-navigation';
 
 class HomeScreen extends React.Component {
@@ -21,6 +22,10 @@ class HomeScreen extends React.Component {
         <Button
           onPress={() => navigate('Donate')}
           title='Link to Donation page'
+        />
+        <Button
+          onPress={() => navigate('GeoMap')}
+          title='Link to Map'
         />
         <Text>Home page content</Text>
       </View>
@@ -37,18 +42,19 @@ class Donate extends React.Component {
   }
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
 const BeeAppy = StackNavigator({
   Home: { screen: HomeScreen },
   Donate: { screen: Donate },
+  GeoMap: { screen: GeoMap }
 });
-
-const styles = StyleSheet.create({
-   container: {
-     flex: 1,
-     backgroundColor: '#fff',
-     alignItems: 'center',
-     justifyContent: 'center',
-   },
- });
 
 AppRegistry.registerComponent('BeeAppy', () => BeeAppy);
