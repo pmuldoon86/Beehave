@@ -22,14 +22,14 @@ class HomeScreen extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <View style={style.viewStyle}>
-      <Home></Home>
-      <Button
-        onPress={() => navigate('Donate')}
-        title='Help the bees!'
-      />
-    </View>
-  );
-}
+        <Home></Home>
+        <Button
+          onPress={() => navigate('Donate')}
+          title='Help the bees!'
+        />
+      </View>
+    );
+  }
 }
 
 class Donate extends React.Component {
@@ -38,9 +38,11 @@ class Donate extends React.Component {
   };
   render() {
     return (
-      <TouchableOpacity onPress={() => Linking.openURL('http://bumblebeeconservation.org/')}>
-      <Text>Help the Bees</Text>
-    </TouchableOpacity>
+      <View style={style.viewStyle}>
+        <TouchableOpacity onPress={() => Linking.openURL('http://bumblebeeconservation.org/')}>
+          <Text>Help the Bees</Text>
+        </TouchableOpacity>
+      </View>
   )
 }
 }
