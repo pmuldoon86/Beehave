@@ -1,7 +1,9 @@
 import React from 'react';
 import BeeButton from '../components/BeeButton';
-import Donate from './Donate'
-import { StyleSheet, Text, View, Button } from 'react-native';
+import BeeFactButton from '../components/BeeFactButton';
+import Donate from './Donate';
+
+import { StyleSheet, Text, View, Button, TouchableHighlight } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 export default class Home extends React.Component {
@@ -10,6 +12,7 @@ export default class Home extends React.Component {
   };
   render() {
     const { navigate } = this.props.navigation;
+    console.log("hello");
     return(
       <View style={styles.container}>
         <Text>Hi, welcome to BeeAppy </Text>
@@ -18,6 +21,7 @@ export default class Home extends React.Component {
           onPress={() => navigate('Donate')}
           title='Link to Donation page'
         />
+        <BeeFactButton />
       </View>
     );
   }
