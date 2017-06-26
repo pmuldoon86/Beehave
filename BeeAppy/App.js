@@ -45,18 +45,20 @@ class Donate extends React.Component {
   }
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
 const BeeAppy = StackNavigator({
   Home: { screen: HomeScreen },
   Donate: { screen: Donate },
 });
 
-const styles = StyleSheet.create({
-   container: {
-     flex: 1,
-     backgroundColor: '#fff',
-     alignItems: 'center',
-     justifyContent: 'center',
-   },
- });
+
 
 AppRegistry.registerComponent('BeeAppy', () => BeeAppy);
