@@ -25,7 +25,6 @@ class HomeScreen extends React.Component {
           onPress={() => navigate('Donate')}
           title='Link to Donation page'
         />
-        <Text>Home page content</Text>
       </View>
     );
   }
@@ -39,7 +38,7 @@ class Donate extends React.Component {
     return (
       <TouchableOpacity onPress={() => Linking.openURL('http://bumblebeeconservation.org/')}>
         <Text>Help the Bees</Text>
-        </TouchableOpacity>
+      </TouchableOpacity>
     )
   }
 }

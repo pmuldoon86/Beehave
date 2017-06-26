@@ -1,14 +1,31 @@
 import React from 'react';
-import { Button } from 'react-native';
+import { TouchableHighlight, View, Text } from 'react-native';
 
 
 export default class BeeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      beesNum: 0
+    };
+  }
+  addBee = () => {
+    this.setState({
+      beesNum: this.state.beesNum + 1
+    });
+  }
+
   render() {
-    var bee = 0;
     return(
-      <Button onPress={() => {bee=bee+1, console.log(bee)}}
-              title="BeeButton"
-      />
+      <TouchableHighlight
+       onPress = {() => { this.addBee(); }}>
+        <View>
+          <Text>
+            {this.state.beesNum} bees
+            BeeButton
+          </Text>
+        </View>
+      </TouchableHighlight>
     );
   }
 }
