@@ -10,6 +10,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import Home from './src/screens/Home';
+import BeeAPI from './src/BeeAPI';
 import { StackNavigator } from 'react-navigation';
 
 class HomeScreen extends React.Component {
@@ -20,6 +21,7 @@ class HomeScreen extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
+        <BeeAPI />
         <Home></Home>
         <Button
           onPress={() => navigate('Donate')}
