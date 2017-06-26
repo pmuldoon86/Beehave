@@ -1,28 +1,25 @@
 # Bee Appy
-by Makers Academy Remote April 2017
-Jessica Barclay, Miles Illsley, Paula Muldoon and Simon Tanner
+A full stack iOS application built using React Native and Ruby on Rails, built collaboratively by Makers Academy Remote April 2017 [Jessica Barclay](https://github.com/JessicaBarclay), [Miles Illsley](https://github.com/milesillsley), [Paula Muldoon](https://github.com/pmuldoon86) and [Simon Tanner](https://github.com/SimonTanner)
 
-### About
+## About
 
 ---
 
-## Version Control
-This program requires the following:
-```bash
-nvm >> 0.33.2
-
-npm >> 5.0.3
-
-node >> 6.11.0
+### Version Control with Node.js
+This program requires Node.js, NPM and NVM to be installed locally on your machine.
+Ensure you run the following to use the latest **LTS** version of Node:
 ```
-
-## To run
-Clone the repo. Then:
-
-```bash
+nvm install --lts
+```
+### Local Installation
+In your terminal, run:
+```
+git clone git@github.com:SimonTanner/Beehave.git
+cd Beehave
+npm install
 ```
 #### To run the tests
-```bash
+```
 npm test
 ```
 
@@ -35,12 +32,20 @@ npm test
 * Remote collaboration
 
 ---
-## Technologies used
 
-* [JavaScript ES6]
-* [React Native
-* [Expo]
-* [Jest]
-* [GitHub] for storing our work
-* [Trello](https://trello.com/) for tracking and organising workflow
-) for hosting our website
+### Technologies
+
+* JavaScript ES6
+* React Native
+* Ruby on Rails
+* Node.js
+* Jest
+* Enzyme
+* GitHub for storing our work
+* Trello for tracking and organising workflow
+* Ruby on Rails API to carry out HTTP requests to the database
+* PostgreSQL
+* Heroku
+
+
+See our live [API](https://bee-appy.herokuapp.com/) hosted on Heroku, or visit the [repo](https://github.com/pmuldoon86/beeAppy_api)
