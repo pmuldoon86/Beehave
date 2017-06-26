@@ -19,7 +19,13 @@ class HomeScreen extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View style={styles.container}>
+      <View style={
+        {backgroundColor: '#ff73d6',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex: 1
+        }
+      }>
         <Home></Home>
         <Button
           onPress={() => navigate('Donate')}
@@ -47,14 +53,5 @@ const BeeAppy = StackNavigator({
   Home: { screen: HomeScreen },
   Donate: { screen: Donate },
 });
-
-const styles = StyleSheet.create({
-   container: {
-     flex: 1,
-     backgroundColor: '#fff',
-     alignItems: 'center',
-     justifyContent: 'center',
-   },
- });
 
 AppRegistry.registerComponent('BeeAppy', () => BeeAppy);

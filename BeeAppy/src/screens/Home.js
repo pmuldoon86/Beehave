@@ -7,7 +7,12 @@ export default class Home extends React.Component {
   render() {
     return(
       <View>
-        <Text>Hi, welcome to BeeAppy </Text>
+        <Text style={
+          { backgroundColor: '#ffcd6d',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }
+        }>Hi, welcome to BeeAppy </Text>
         <BeeButton />
       </View>
     );
