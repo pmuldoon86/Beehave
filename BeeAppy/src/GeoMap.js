@@ -11,7 +11,7 @@ export default class GeoMap extends React.Component {
   static navigationOptions = {
     title: 'Map',
   };
-
+  // Geolocation is built into React Native, takes initial state on line 18
   constructor(props) {
     super(props)
 
@@ -21,7 +21,7 @@ export default class GeoMap extends React.Component {
       error: null,
     }
   }
-
+  // Set geolocation to current position long and lat
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -31,6 +31,7 @@ export default class GeoMap extends React.Component {
           error: null,
         });
       },
+    // print error if timed out or unable to find location
       (error) => this.setState({ error: error.message }),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
     );
@@ -39,11 +40,14 @@ export default class GeoMap extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+      // MapView displays the map using MapView tags
+      // Takes 4 properties lat and long, and two delta properties to determine position on screen
         <MapView
           style={styles.map}
           initialRegion={{ latitude: this.state.latitude, longitude: this.state.longitude,
                            latitudeDelta: 0, longitudeDelta: 0}}
         />
+      // Return current lattitude and longitude
           <Text>Latitude: {this.state.latitude}</Text>
           <Text>Longitude: {this.state.longitude}</Text>
         {this.state.error ? <Text>Error: {this.state.error}</Text> : null}
