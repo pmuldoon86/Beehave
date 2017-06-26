@@ -8,11 +8,11 @@ export default class Home extends React.Component {
     return(
       <View>
         <Text style={
-          { backgroundColor: '#ffcd6d',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }
-        }>Hi, welcome to BeeAppy </Text>
+          { fontSize: 20,
+            backgroundColor: '#ffcd6d',
+            justifyContent: 'center'
+                    }
+        }>{"\n"}Spotted a bee?  Click the button!{"\n"}</Text>
         <BeeButton />
       </View>
     );

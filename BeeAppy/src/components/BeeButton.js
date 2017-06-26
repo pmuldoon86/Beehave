@@ -21,8 +21,8 @@ export default class BeeButton extends React.Component {
        onPress = {() => { this.addBee(); }}>
         <View>
           <Text>
+            BeeButton {"\n"}
             {this.state.beesNum} bees
-            BeeButton
           </Text>
         </View>
       </TouchableHighlight>
