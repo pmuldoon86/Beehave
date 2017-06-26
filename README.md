@@ -18,7 +18,9 @@ git clone git@github.com:SimonTanner/Beehave.git
 cd Beehave
 npm install
 ```
+
 #### To run the tests
+
 ```
 npm test
 ```
