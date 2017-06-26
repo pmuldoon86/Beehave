@@ -3,10 +3,16 @@ var { StyleSheet } = React;
 
 var style = StyleSheet.create({
   viewStyle: {
-    backgroundColor: '#ff73d6',
+    backgroundColor: '#fff6fb',
     justifyContent: 'center',
     alignItems: 'center',
     flex: 1,
+  },
+
+  homeTextStyle: {
+    fontSize: 20,
+    backgroundColor: '#ffcd6d',
+    justifyContent: 'center',
   },
 });
 

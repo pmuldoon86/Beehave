@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import Home from './src/screens/Home';
 import { StackNavigator } from 'react-navigation';
-import style from './src/styles/style.js'
+import style from './src/styles/style.js';
 
 class HomeScreen extends React.Component {
   static navigationOptions = {

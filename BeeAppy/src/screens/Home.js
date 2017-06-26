@@ -2,17 +2,14 @@ import React from 'react';
 import BeeButton from '../components/BeeButton';
 import { Text, View, Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
+import style from '../styles/style.js';
+
 
 export default class Home extends React.Component {
   render() {
-    return(
+    return (
       <View>
-        <Text style={
-          { fontSize: 20,
-            backgroundColor: '#ffcd6d',
-            justifyContent: 'center'
-                    }
-        }>{"\n"}Spotted a bee?  Click the button!{"\n"}</Text>
+        <Text style={style.homeTextStyle}>{'\n'}Spotted a bee?  Click the button!{'\n'}</Text>
         <BeeButton />
       </View>
     );
