@@ -1,5 +1,7 @@
 import React from 'react';
-import { TouchableHighlight, View, Text } from 'react-native';
+import { TouchableHighlight, View, Text, Image } from 'react-native';
+import style from '../styles/style.js';
+
 
 
 export default class BeeButton extends React.Component {
@@ -9,23 +11,28 @@ export default class BeeButton extends React.Component {
       beesNum: 0
     };
   }
+
   addBee = () => {
     this.setState({
       beesNum: this.state.beesNum + 1
     });
-  }
+  };
 
   render() {
     return(
-      <TouchableHighlight
-       onPress = {() => { this.addBee(); }}>
-        <View>
-          <Text>
-            BeeButton {"\n"}
-            {this.state.beesNum} bees
-          </Text>
-        </View>
-      </TouchableHighlight>
+      <View>
+        <TouchableHighlight
+          onPress = {() => { this.addBee(); }}>
+          <Image
+            style={style.imageButtonStyle}
+            source={require('../img/bee.jpeg')}
+          />
+        </TouchableHighlight>
+        <Text>
+          {'\n'}
+          {this.state.beesNum} bees
+        </Text>
+      </View>
     );
   }
 }

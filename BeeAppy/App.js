@@ -7,7 +7,8 @@ import {
   Button,
   WebView,
   Linking,
-  TouchableOpacity
+  TouchableOpacity,
+  Image
 } from 'react-native';
 import Home from './src/screens/Home';
 import { StackNavigator } from 'react-navigation';
@@ -24,7 +25,7 @@ class HomeScreen extends React.Component {
       <Home></Home>
       <Button
         onPress={() => navigate('Donate')}
-        title='Link to Donation page'
+        title='Help the bees!'
       />
     </View>
   );

@@ -14,6 +14,11 @@ var style = StyleSheet.create({
     backgroundColor: '#ffcd6d',
     justifyContent: 'center',
   },
+
+  imageButtonStyle: {
+    width: 50, height: 50,
+    alignItems: 'center',
+  },
 });
 
 export default style;

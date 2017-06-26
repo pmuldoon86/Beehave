@@ -1,6 +1,6 @@
 import React from 'react';
 import BeeButton from '../components/BeeButton';
-import { Text, View, Button } from 'react-native';
+import { Text, View, Button, Image } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import style from '../styles/style.js';
 
