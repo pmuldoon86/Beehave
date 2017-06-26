@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import Home from './src/screens/Home';
 import { StackNavigator } from 'react-navigation';
+import style from './src/styles/style.js'
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -19,21 +20,15 @@ class HomeScreen extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View style={
-        {backgroundColor: '#ff73d6',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flex: 1
-        }
-      }>
-        <Home></Home>
-        <Button
-          onPress={() => navigate('Donate')}
-          title='Link to Donation page'
-        />
-      </View>
-    );
-  }
+      <View style={style.viewStyle}>
+      <Home></Home>
+      <Button
+        onPress={() => navigate('Donate')}
+        title='Link to Donation page'
+      />
+    </View>
+  );
+}
 }
 
 class Donate extends React.Component {
@@ -43,10 +38,10 @@ class Donate extends React.Component {
   render() {
     return (
       <TouchableOpacity onPress={() => Linking.openURL('http://bumblebeeconservation.org/')}>
-        <Text>Help the Bees</Text>
-      </TouchableOpacity>
-    )
-  }
+      <Text>Help the Bees</Text>
+    </TouchableOpacity>
+  )
+}
 }
 
 const BeeAppy = StackNavigator({
