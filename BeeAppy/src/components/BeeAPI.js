@@ -38,4 +38,7 @@ export default class BeeAPI extends React.Component {
     })
     .done();
   }
+  render() {
+    return null
+  }
 }
