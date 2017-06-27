@@ -9,7 +9,7 @@ import { Stylesheet,
 export default class BeeFact extends React.Component{
 
   getBeeFact = () => {
-    fetch("http://localhost:3000/bee_facts")
+    fetch("https://bee-appy.herokuapp.com/bee_facts")
     .then((response) => response.json())
     .then((responseJson) => {
       AlertIOS.alert(
