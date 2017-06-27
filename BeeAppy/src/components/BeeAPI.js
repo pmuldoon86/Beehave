@@ -6,6 +6,9 @@ import { StyleSheet,
         AlertIOS
 } from 'react-native';
 
+var longitude_test = 12.3
+var latitude_test = 45.6
+
 export default class BeeAPI extends React.Component {
 
   GETbee = () => {
@@ -27,7 +30,7 @@ export default class BeeAPI extends React.Component {
     fetch("https://bee-appy.herokuapp.com/bees", {
       method: "POST",
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({location: "location"})
+      body: JSON.stringify({latitude: latitude_test, longitude: longitude_test})
     })
     .then((response) => response.json())
     .then((responseData) => {
