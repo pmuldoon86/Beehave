@@ -19,6 +19,13 @@ var style = StyleSheet.create({
     width: 50, height: 50,
     alignItems: 'center',
   },
+
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff6fb'
+  }
 });
 
 export default style;
