@@ -5,6 +5,11 @@ import StackNavigator from 'react-navigation';
 import MapView from 'react-native-maps';
 
 export default class BeeHive extends React.Component {
+
+  static navigationOptions = {
+    title: 'BeeHive',
+  };
+
   render() {
     return (
       <View style={style.container}>

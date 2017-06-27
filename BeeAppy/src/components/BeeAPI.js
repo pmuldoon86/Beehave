@@ -9,7 +9,7 @@ import { StyleSheet,
 export default class BeeAPI extends React.Component {
 
   GETbee = () => {
-    fetch("https://bee-appy.herokuapp.com/bees", {
+    fetch("http://localhost:3000/bees", {
       method: "GET",
       headers: {'Content-Type': 'application/json'},
     })
@@ -24,10 +24,10 @@ export default class BeeAPI extends React.Component {
   }
 
   POSTbee = () => {
-    fetch("https://bee-appy.herokuapp.com/bees", {
+    fetch("http://localhost:3000/bees", {
       method: "POST",
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({location: "location"})
+      body: JSON.stringify({latitude: 37.78825, longitude: -122.4324})
     })
     .then((response) => response.json())
     .then((responseData) => {
