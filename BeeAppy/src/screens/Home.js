@@ -1,27 +1,27 @@
 import React from 'react';
 import BeeButton from '../components/BeeButton';
-import Donate from './Donate'
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import BeeFactButton from '../components/BeeFactButton';
+import Donate from './Donate';
 import style from '../styles/style.js';
-
+import { StyleSheet, Text, View, Button, TouchableHighlight, Image } from 'react-native';
+import { StackNavigator } from 'react-navigation';
 
 export default class Home extends React.Component {
   static navigationOptions = {
     title: 'BeeAppy',
   };
   render() {
-   const { navigate } = this.props.navigation;
-
-    return (
+    const { navigate } = this.props.navigation;
+    return(
       <View>
+        <Text>Hi, welcome to BeeAppy </Text>
         <Text style={style.homeTextStyle}>{'\n'}Spotted a bee?  Click the button!{'\n'}</Text>
         <BeeButton />
-      
         <Button
           onPress={() => navigate('Donate')}
           title='Help the bees!'
         />
+        <BeeFactButton />
       </View>
     );
   }
