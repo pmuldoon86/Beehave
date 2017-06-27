@@ -10,14 +10,11 @@ exports[`Home component renders a home page 1`] = `
     Hi, welcome to BeeAppy 
   </Text>
   <View
-    accessibilityComponentType="button"
+    accessibilityComponentType={undefined}
     accessibilityLabel={undefined}
-    accessibilityTraits={
-      Array [
-        "button",
-      ]
-    }
+    accessibilityTraits={undefined}
     accessible={true}
+    hasTVPreferredFocus={undefined}
     hitSlop={undefined}
     isTVSelectable={true}
     onLayout={undefined}
@@ -28,36 +25,24 @@ exports[`Home component renders a home page 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
-        "opacity": 1,
-      }
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        undefined,
+      ]
     }
     testID={undefined}
     tvParallaxProperties={undefined}
   >
-    <View
-      style={
-        Array [
-          Object {},
-        ]
-      }
-    >
+    <View>
       <Text
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
-        style={
-          Array [
-            Object {
-              "color": "#0C42FD",
-              "fontSize": 18,
-              "padding": 8,
-              "textAlign": "center",
-            },
-          ]
-        }
       >
-        BeeButton
+        0
+         bees BeeButton
       </Text>
     </View>
   </View>
