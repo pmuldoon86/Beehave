@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme';
-import Home from '../src/Home';
-import BeeButton from '../src/BeeButton';
+import Home from '../src/screens/Home';
+import BeeButton from '../src/components/BeeButton';
 
 import renderer from 'react-test-renderer';
 

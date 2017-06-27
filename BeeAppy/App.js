@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import {
   AppRegistry,
   StyleSheet,
@@ -41,6 +42,13 @@ class Donate extends React.Component {
     return <Text>Donation content</Text>
   }
 }
+=======
+import { AppRegistry } from 'react-native';
+import Home from './src/screens/Home';
+import Donate from './src/screens/Donate';
+import { StackNavigator } from 'react-navigation';
+import style from './src/styles/style.js';
+>>>>>>> master
 
 const styles = StyleSheet.create({
   container: {
@@ -52,7 +60,7 @@ const styles = StyleSheet.create({
 });
 
 const BeeAppy = StackNavigator({
-  Home: { screen: HomeScreen },
+  Home: { screen: Home },
   Donate: { screen: Donate },
   GeoMap: { screen: GeoMap }
 });
