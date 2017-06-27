@@ -16,22 +16,19 @@ export default class BeeHive extends React.Component {
     super(props)
 
     this.state = {
-      markers: [{
-        coordinates: {
-          latitude: 37.78825,
-          longitude: -122.4399
-        },
-      },
-      {
-        coordinates: {
-          latitude: 37.78826,
-          longitude: -122.4600
-        },
-      }]
+      markers: []
     }
+  }
+  componentWillMount() {
+    fetch("http://localhost:3000/bees").then((res) => res.json()).then((res) => {
+      this.setState({
+        markers: res
+      })
+    })
   }
 
   render() {
+    console.log(this.state.markers);
     return (
       <View style={style.container}>
         <MapView style={style.map}
@@ -43,7 +40,7 @@ export default class BeeHive extends React.Component {
           }}>
           {this.state.markers.map(marker => (
             <MapView.Marker
-              coordinate={marker.coordinates}
+              coordinate={{latitude: marker.latitude,longitude: marker.longitude}}
             />
           ))}
         </MapView>
