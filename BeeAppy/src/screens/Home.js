@@ -1,6 +1,6 @@
 import React from 'react';
-import BeeButton from '../components/BeeButton';
-import BeeFactButton from '../components/BeeFactButton';
+import BeeButton from '../components/buttons/BeeButton';
+import BeeFactButton from '../components/buttons/BeeFactButton';
 import Donate from './Donate';
 import style from '../styles/style.js';
 import {

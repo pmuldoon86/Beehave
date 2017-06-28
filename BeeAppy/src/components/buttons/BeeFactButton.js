@@ -6,8 +6,8 @@ import { Stylesheet,
       Image,
       AlertIOS
 } from 'react-native';
-import BeeFact from '../components/BeeFactApi';
-import style from '../styles/style.js';
+import BeeFact from '../../components/BeeFactApi';
+import style from '../../styles/style.js';
 
 
 const beeFact = new BeeFact();
@@ -21,7 +21,7 @@ export default class BeeFactButton extends React.Component {
           onPress = {beeFact.getBeeFact}>
           <Image
             style={style.imageButtonStyle}
-            source={require('../img/flower.png')}
+            source={require('../../img/flower.png')}
           />
         </TouchableHighlight>
       </View>
