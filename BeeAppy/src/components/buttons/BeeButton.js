@@ -7,7 +7,7 @@ const api = new BeeAPI();
 
 export default class BeeButton extends React.Component {
   render() {
-    return(
+    return (
       <View>
         <TouchableHighlight
           onPress = {api.POSTbee}>

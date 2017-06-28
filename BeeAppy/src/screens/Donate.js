@@ -4,7 +4,6 @@ import {
   Linking,
   Text,
   TouchableHighlight,
-  TouchableOpacity,
   Image
 } from 'react-native';
 import BeeButton from '../components/buttons/BeeButton'
@@ -26,12 +25,18 @@ export default class Donate extends React.Component {
               source={require('../img/beeBBCT.jpg')}
             />
           </TouchableHighlight>
-          <TouchableOpacity onPress={() => Linking.openURL('https://www.planetbee.org/?gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOgqauFbe6WgszbJRAfi-jP1atAuoRLGGTaaBjxlPMSUaAncB8P8HAQ')}>
-            <Text style={style.donateText}>Planet Bees{'\n'}</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => Linking.openURL('https://www.buglife.org.uk/adopt-shrill-carder-bee?gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOlQPJExuKhmXzG2o1_K-Jf4FYYnU2GQc0xTnpAfPlwkaAsa58P8HAQ')}>
-            <Text style={style.donateText}>Adopt a Bumblebee{'\n'}</Text>
-          </TouchableOpacity>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.planetbee.org/?gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOgqauFbe6WgszbJRAfi-jP1atAuoRLGGTaaBjxlPMSUaAncB8P8HAQ')}>
+            <Image
+              style={style.donateImageButtonStyle}
+              source={require('../img/planetbee.png')}
+            />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.buglife.org.uk/adopt-shrill-carder-bee?gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOlQPJExuKhmXzG2o1_K-Jf4FYYnU2GQc0xTnpAfPlwkaAsa58P8HAQ')}>
+            <Image
+              style={style.donateImageButtonStyle}
+              source={require('../img/buglife.jpg')}
+            />
+          </TouchableHighlight>
         </View>
 
         <TouchableHighlight
