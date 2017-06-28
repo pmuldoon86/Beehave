@@ -37,7 +37,7 @@ export default class Donate extends React.Component {
               source={require('../img/fruit/pear.png')}
             />
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => Linking.openURL('http://www.oxfam.org.uk/shop/oxfam-unwrapped?pscid=ps_ggl_Oxfam_Unwrapped_2016_BAU&gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOtoVZ_W8rdBh2U_N2S304yWwihxkyP1nG-8ppvGi4D8aAhGb8P8HAQ&gclsrc=aw.ds&dclid=COnzw8aR4dQCFaupUQodaBwLsg')}>
+          <TouchableHighlight onPress={() => Linking.openURL('http://www.oxfam.org.uk/shop/oxfam-unwrapped/gardeners/honey-bees-ou1004ml')}>
             <Image
               style={style.donateImageButtonStyle4}
               source={require('../img/fruit/pineapple.png')}
