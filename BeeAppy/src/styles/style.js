@@ -15,11 +15,6 @@ var style = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  imageButtonStyle: {
-    width: 60, height: 60,
-    alignItems: 'center',
-  },
-
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -44,6 +39,18 @@ var style = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     alignItems: 'center',
+  },
+
+  imageButtonStyle: {
+    width: 60, height: 60,
+    alignItems: 'center',
+  },
+
+  beeButtonStyle: {
+    width: 100, height: 100,
+    position: 'absolute',
+    top: 120,
+    left: 140,
   },
 
   donateImageButtonStyle: {
