@@ -1,6 +1,7 @@
 import React from 'react';
 import BeeButton from '../components/BeeButton';
 import BeeFactButton from '../components/BeeFactButton';
+import GetGeoLocation from '../components/GetGeoLocation';
 import Donate from './Donate';
 import style from '../styles/style.js';
 import { StyleSheet, Text, View, Button, TouchableHighlight, Image } from 'react-native';

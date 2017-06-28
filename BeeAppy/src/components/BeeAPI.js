@@ -5,6 +5,9 @@ import { StyleSheet,
         Text,
         AlertIOS
 } from 'react-native';
+import GetGeoLocation from './GetGeoLocation'
+
+var location = new GetGeoLocation();
 
 export default class BeeAPI extends React.Component {
 
@@ -16,18 +19,23 @@ export default class BeeAPI extends React.Component {
     .then((response) => response.json())
   }
 
-  POSTbee = () => {
+  POSTbee = (geoData) => {
+    var longitude = geoData.longitude
+    var latitude = geoData.latitude
     fetch("https://bee-appy.herokuapp.com/bees", {
       method: "POST",
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({latitude: 37.79125, longitude: -122.4134})
+      body: JSON.stringify({latitude: latitude, longitude: longitude})
     })
     .then((response) => response.json())
     .then((responseData) => {
       AlertIOS.alert(
         "Bee has been posted",
-        "Response Body -> " + JSON.stringify(responseData)
+        "latitude: " + JSON.stringify(responseData.latitude) + "longitude: " + JSON.stringify(responseData.longitude)
       )
+    })
+    .catch((error) => {
+      console.log(error);
     })
     .done();
   }

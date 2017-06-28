@@ -4,7 +4,6 @@ import Home from './src/screens/Home';
 import Donate from './src/screens/Donate';
 import BeeHive from './src/screens/BeeHive';
 import { StackNavigator } from 'react-navigation';
-import style from './src/styles/style.js';
 
 const BeeAppy = StackNavigator({
   Home: { screen: Home },
