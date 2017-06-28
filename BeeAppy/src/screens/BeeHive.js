@@ -20,7 +20,7 @@ export default class BeeHive extends React.Component {
     }
   }
   componentWillMount() {
-    fetch("http://localhost:3000/bees").then((res) => res.json()).then((res) => {
+    fetch("https://bee-appy.herokuapp.com/bees").then((res) => res.json()).then((res) => {
       this.setState({
         markers: res
       })
