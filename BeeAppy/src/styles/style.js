@@ -52,35 +52,35 @@ var style = StyleSheet.create({
   },
 
   donateImageButtonStyle1: {
-    width: 60, height: 60,
+    width: 80, height: 80,
     position: 'absolute',
-    top: 300,
+    top: 320,
     left: 80,
   },
 
   donateImageButtonStyle2: {
-    width: 60, height: 60,
+    width: 80, height: 80,
     position: 'absolute',
-    top: 300,
+    top: 320,
     left: 225,
   },
 
   donateImageButtonStyle3: {
-    width: 60, height: 60,
+    width: 80, height: 80,
     position: 'absolute',
-    top: 120,
+    top: 100,
     left: 80,
   },
 
   donateImageButtonStyle4: {
-    width: 60, height: 60,
+    width: 80, height: 80,
     position: 'absolute',
-    top: 120,
+    top: 100,
     left: 225,
   },
 
   donateImageButtonStyle5: {
-    width: 60, height: 60,
+    width: 80, height: 80,
     position: 'absolute',
     top: 200,
     left: 160,
