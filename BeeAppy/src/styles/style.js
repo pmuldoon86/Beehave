@@ -52,7 +52,7 @@ var style = StyleSheet.create({
   },
 
   donateImageButtonStyle: {
-    width: 150, height: 50,
+    width: 60, height: 60,
     alignItems: 'center',
   },
 
