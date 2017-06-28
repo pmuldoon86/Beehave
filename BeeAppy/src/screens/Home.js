@@ -25,12 +25,11 @@ export default class Home extends React.Component {
           onPress={() => navigate('Donate')}
           title='Help the bees!'
         />
-        <BeeFactButton />
         <Button
-          onPress={() => { navigate('GeoMap') }}
-          title='GeoMap'
+          onPress={() => navigate('BeeHive')}
+          title='See the bees!'
         />
-        
+        <BeeFactButton />        
       </View>
     );
   }
