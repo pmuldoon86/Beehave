@@ -14,15 +14,11 @@ import {
 import { StackNavigator } from 'react-navigation';
 
 export default class Home extends React.Component {
-  static navigationOptions = {
-    title: 'BeeAppy',
-  };
+
   render() {
     const { navigate } = this.props.navigation;
     return(
-      <View>
-        <Text>Hi, welcome to BeeAppy </Text>
-        <Text style={style.homeTextStyle}>{'\n'}Spotted a bee?  Click the button!{'\n'}</Text>
+      <View style={style.viewStyle}>
         <BeeButton />
           <TouchableHighlight
             onPress={() => navigate('Donate')}

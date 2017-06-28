@@ -3,15 +3,13 @@ var { StyleSheet } = React;
 
 var style = StyleSheet.create({
   viewStyle: {
-    backgroundColor: '#fff6fb',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: '#A5DBEB',
     flex: 1,
   },
 
   homeTextStyle: {
     fontSize: 20,
-    backgroundColor: '#ffcd6d',
+    backgroundColor: '#48FB0D',
     justifyContent: 'center',
   },
 
@@ -19,7 +17,7 @@ var style = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff6fb',
+    backgroundColor: '#48FB0D',
   },
 
   map: {
@@ -49,7 +47,7 @@ var style = StyleSheet.create({
   beeButtonStyle: {
     width: 100, height: 100,
     position: 'absolute',
-    top: 120,
+    top: 190,
     left: 140,
   },
 
