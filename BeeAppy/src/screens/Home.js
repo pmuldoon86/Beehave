@@ -1,7 +1,10 @@
 import React from 'react';
 import BeeButton from '../components/BeeButton';
 import BeeFactButton from '../components/BeeFactButton';
+import GeoMapButton from '../components/GeoMapButton';
+import GetGeoLocation from '../components/GetGeoLocation';
 import Donate from './Donate';
+import GeoMap from './GeoMap';
 import style from '../styles/style.js';
 import { StyleSheet, Text, View, Button, TouchableHighlight, Image } from 'react-native';
 import { StackNavigator } from 'react-navigation';
@@ -12,6 +15,7 @@ export default class Home extends React.Component {
   };
   render() {
     const { navigate } = this.props.navigation;
+    const getGeoLocation = new GetGeoLocation();
     return(
       <View>
         <Text>Hi, welcome to BeeAppy </Text>
@@ -22,6 +26,11 @@ export default class Home extends React.Component {
           title='Help the bees!'
         />
         <BeeFactButton />
+        <Button
+          onPress={() => { navigate('GeoMap') }}
+          title='GeoMap'
+        />
+        
       </View>
     );
   }
