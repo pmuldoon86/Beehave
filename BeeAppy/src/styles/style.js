@@ -34,6 +34,22 @@ var style = StyleSheet.create({
     bottom: 0,
     position: 'absolute',
   },
+
+  donateListStyle: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+
+  donateText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    alignItems: 'center',
+  },
+
+  donateImageButtonStyle: {
+    width: 150, height: 50,
+    alignItems: 'center',
+  },
 });
 
 export default style;
