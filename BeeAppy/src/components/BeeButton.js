@@ -11,12 +11,14 @@ export default class BeeButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      geoLocation: null
+      latitude: null,
+      longitude: null
     };
   }
 
   updateGeoLocation = (geoData) => {
-    this.setState({ geoLocation:  geoData});
+    this.setState({ latitude:  geoData.latitude,
+    longitude: geoData.longitude});
   }
 
   render() {
@@ -24,10 +26,11 @@ export default class BeeButton extends React.Component {
     return(
       <View>
         <GetGeoLocation passGeoLocation = {this.updateGeoLocation} />
-        <Text>Current location: {JSON.stringify(this.state.geoLocation)}</Text>
-        <BeeAPI geoDATA = {geo} />
+        <Text>Current latitude: {JSON.stringify(this.state.latitude)}</Text>
+        <Text>Current longitude: {JSON.stringify(this.state.longitude)}</Text>
+        
         <TouchableHighlight
-          onPress = {api.POSTbee}>
+          onPress = {api.POSTbee({latitude: this.state.latitude, longitude: this.state.longitude})}>
           <Image
             style={style.imageButtonStyle}
             source={require('../img/beeAbstract2.jpg')}
