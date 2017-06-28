@@ -18,6 +18,7 @@ export default class BeeFactButton extends React.Component {
     return(
       <View>
         <TouchableHighlight
+          underlayColor="#A5DBEB"
           onPress = {beeFact.getBeeFact}>
           <Image
             style={style.imageButtonStyle}

@@ -19,7 +19,9 @@ export default class Donate extends React.Component {
 
       <View style={style.viewStyle}>
         <View style={style.donateListStyle}>
-          <TouchableHighlight onPress={() => Linking.openURL('https://bumblebeeconservation.org/')}>
+          <TouchableHighlight
+            onPress={() => Linking.openURL('https://bumblebeeconservation.org/')}
+>
             <Image
               style={style.donateImageButtonStyle1}
               source={require('../img/fruit/avocado.png')}
@@ -53,6 +55,7 @@ export default class Donate extends React.Component {
 
         <TouchableHighlight
           onPress={() => navigate('Home')}
+          underlayColor="#A5DBEB"
           style={style.donateButton}>
           <Image
             style={style.imageButtonStyle}
@@ -62,6 +65,7 @@ export default class Donate extends React.Component {
 
           <TouchableHighlight
             onPress={() => navigate('BeeHive')}
+            underlayColor="#A5DBEB"
             style={style.beehiveButton}>
             <Image
               style={style.imageButtonStyle}

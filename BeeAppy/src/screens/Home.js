@@ -22,6 +22,7 @@ export default class Home extends React.Component {
         <BeeButton />
           <TouchableHighlight
             onPress={() => navigate('Donate')}
+            underlayColor="#A5DBEB"
             style={style.donateButton}>
             <Image
               style={style.imageButtonStyle}
@@ -30,6 +31,7 @@ export default class Home extends React.Component {
           </TouchableHighlight>
           <TouchableHighlight
             onPress={() => navigate('BeeHive')}
+            underlayColor="#A5DBEB"
             style={style.beehiveButton}>
             <Image
               style={style.imageButtonStyle}

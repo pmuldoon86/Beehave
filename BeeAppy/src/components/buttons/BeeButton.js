@@ -10,6 +10,7 @@ export default class BeeButton extends React.Component {
     return (
       <View>
         <TouchableHighlight
+          underlayColor="#A5DBEB"
           onPress = {api.POSTbee}>
           <Image
             style={style.beeButtonStyle}
