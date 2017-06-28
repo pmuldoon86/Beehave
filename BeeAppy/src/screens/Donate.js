@@ -21,31 +21,31 @@ export default class Donate extends React.Component {
         <View style={style.donateListStyle}>
           <TouchableHighlight onPress={() => Linking.openURL('https://bumblebeeconservation.org/')}>
             <Image
-              style={style.donateImageButtonStyle}
+              style={style.donateImageButtonStyle1}
               source={require('../img/fruit/avocado.png')}
             />
           </TouchableHighlight>
           <TouchableHighlight onPress={() => Linking.openURL('https://www.planetbee.org/?gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOgqauFbe6WgszbJRAfi-jP1atAuoRLGGTaaBjxlPMSUaAncB8P8HAQ')}>
             <Image
-              style={style.donateImageButtonStyle}
+              style={style.donateImageButtonStyle2}
               source={require('../img/fruit/blueberries.png')}
             />
           </TouchableHighlight>
           <TouchableHighlight onPress={() => Linking.openURL('https://www.buglife.org.uk/adopt-shrill-carder-bee?gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOlQPJExuKhmXzG2o1_K-Jf4FYYnU2GQc0xTnpAfPlwkaAsa58P8HAQ')}>
             <Image
-              style={style.donateImageButtonStyle}
+              style={style.donateImageButtonStyle3}
               source={require('../img/fruit/pear.png')}
             />
           </TouchableHighlight>
           <TouchableHighlight onPress={() => Linking.openURL('http://www.oxfam.org.uk/shop/oxfam-unwrapped?pscid=ps_ggl_Oxfam_Unwrapped_2016_BAU&gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOtoVZ_W8rdBh2U_N2S304yWwihxkyP1nG-8ppvGi4D8aAhGb8P8HAQ&gclsrc=aw.ds&dclid=COnzw8aR4dQCFaupUQodaBwLsg')}>
             <Image
-              style={style.donateImageButtonStyle}
+              style={style.donateImageButtonStyle4}
               source={require('../img/fruit/pineapple.png')}
             />
           </TouchableHighlight>
           <TouchableHighlight onPress={() => Linking.openURL('https://www.bbka.org.uk/')}>
             <Image
-              style={style.donateImageButtonStyle}
+              style={style.donateImageButtonStyle5}
               source={require('../img/fruit/watermelon.png')}
             />
           </TouchableHighlight>

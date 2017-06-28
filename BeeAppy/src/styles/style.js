@@ -51,9 +51,39 @@ var style = StyleSheet.create({
     left: 140,
   },
 
-  donateImageButtonStyle: {
+  donateImageButtonStyle1: {
     width: 60, height: 60,
-    alignItems: 'center',
+    position: 'absolute',
+    top: 300,
+    left: 80,
+  },
+
+  donateImageButtonStyle2: {
+    width: 60, height: 60,
+    position: 'absolute',
+    top: 300,
+    left: 225,
+  },
+
+  donateImageButtonStyle3: {
+    width: 60, height: 60,
+    position: 'absolute',
+    top: 120,
+    left: 80,
+  },
+
+  donateImageButtonStyle4: {
+    width: 60, height: 60,
+    position: 'absolute',
+    top: 120,
+    left: 225,
+  },
+
+  donateImageButtonStyle5: {
+    width: 60, height: 60,
+    position: 'absolute',
+    top: 200,
+    left: 160,
   },
 
   donateButton: {
