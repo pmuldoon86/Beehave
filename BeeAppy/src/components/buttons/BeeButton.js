@@ -13,7 +13,7 @@ export default class BeeButton extends React.Component {
           onPress = {api.POSTbee}>
           <Image
             style={style.imageButtonStyle}
-            source={require('../../img/beeAbstract2.jpg')}
+            source={require('../../img/bee.png')}
           />
         </TouchableHighlight>
       </View>

@@ -16,7 +16,7 @@ var style = StyleSheet.create({
   },
 
   imageButtonStyle: {
-    width: 50, height: 50,
+    width: 60, height: 60,
     alignItems: 'center',
   },
 
@@ -53,19 +53,19 @@ var style = StyleSheet.create({
 
   donateButton: {
     position: 'absolute',
-    top: 540,
-    right: 50
+    top: 510,
+    right: 50,
   },
 
   beehiveButton: {
     position: 'absolute',
-    top: 540,
-    left: 165,
+    top: 510,
+    left: 160,
   },
 
   beeFactButton: {
     position: 'absolute',
-    top: 540,
+    top: 510,
     left: 50,
   },
 });
