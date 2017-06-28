@@ -29,30 +29,11 @@ export default class GetGeoLocation extends React.Component {
         this.props.passGeoLocation(this.state);
       },
 
-    // print error if timed out or unable to find location
       (error) => this.setState({ error: error.message }),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
     )
 
-
-    // return {
-    //   position: this.state,
-    // }
-  }
-
-  // position() {
-  //   return {
-  //     state: this.props.state;
-  //   }
-  // }
-
   render() {
-    var Latitude = JSON.stringify(this.state.latitude);
-    var Longitude = JSON.stringify(this.state.longitude);
-    return (
-      <View>
-
-      </View>
-    );
+    return null;
   }
 }

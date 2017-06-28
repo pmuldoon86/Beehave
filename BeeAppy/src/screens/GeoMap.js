@@ -60,9 +60,6 @@ export default class GeoMap extends React.Component {
     );
   }
 }
-// MapView displays the map using MapView tags
-// Takes 4 properties lat and long, and two delta properties to determine position on screen
-// Return current lattitude and longitude
 
 const styles = StyleSheet.create({
   container: {

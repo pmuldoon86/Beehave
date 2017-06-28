@@ -42,7 +42,7 @@ export default class BeeAPI extends React.Component {
       )
     })
     .catch((error) => {
-      console.log(location.position.state);
+      console.log(error);
     })
     .done();
   }

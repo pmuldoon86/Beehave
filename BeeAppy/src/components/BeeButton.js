@@ -25,7 +25,6 @@ export default class BeeButton extends React.Component {
     var coords = {latitude: this.state.latitude, longitude: this.state.longitude};
   }
 
-
   render() {
     var geo = this.state.geoLocation;
     return(
