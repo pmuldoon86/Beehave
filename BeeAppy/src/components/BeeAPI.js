@@ -29,7 +29,7 @@ export default class BeeAPI extends React.Component {
   POSTbee = (geoData) => {
     var longitude = geoData.latitude
     var latitude = geoData.longitude
-    fetch("https://localhost:3000/bees", {
+    fetch("https://bee-appy.herokuapp.com/bees", {
       method: "POST",
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({latitude: latitude, longitude: longitude})
