@@ -50,6 +50,24 @@ var style = StyleSheet.create({
     width: 150, height: 50,
     alignItems: 'center',
   },
+
+  donateButton: {
+    position: 'absolute',
+    top: 540,
+    right: 50
+  },
+
+  beehiveButton: {
+    position: 'absolute',
+    top: 540,
+    left: 165,
+  },
+
+  beeFactButton: {
+    position: 'absolute',
+    top: 540,
+    left: 50,
+  },
 });
 
 export default style;

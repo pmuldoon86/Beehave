@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Stylesheet,
-      TouchableHighlight,
-      View,
-      Text,
-      Image,
-      AlertIOS
+import {
+  Image,
+  Stylesheet,
+  Text,
+  TouchableHighlight,
+  View,
 } from 'react-native';
 import BeeFact from '../../components/BeeFactApi';
 import style from '../../styles/style.js';
